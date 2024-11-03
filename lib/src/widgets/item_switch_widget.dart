@@ -14,7 +14,7 @@ class ItemSwitchWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      minTileHeight: 60,
+      minTileHeight: 65,
       leading: SizedBox(
         width: 40,
         height: 40,

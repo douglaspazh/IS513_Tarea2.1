@@ -14,7 +14,7 @@ class ItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      minTileHeight: 60,
+      minTileHeight: 65,
       leading: SizedBox(
         width: 40,
         height: 40,
@@ -35,7 +35,7 @@ class ItemWidget extends StatelessWidget {
           const SizedBox(width: 8),
           if (notificationCount != null) 
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+              padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
               decoration: BoxDecoration(
                 color: Colors.green,
                 borderRadius: BorderRadius.circular(12),
