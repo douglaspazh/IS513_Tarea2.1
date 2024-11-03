@@ -40,6 +40,7 @@ class ProfileScreen extends StatelessWidget {
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
+                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 18),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(22),
                 ),
@@ -48,7 +49,7 @@ class ProfileScreen extends StatelessWidget {
                 'Edit profile',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 16
+                  fontSize: 18
                 ),
               ),
             ),
@@ -116,7 +117,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                     title: const Text(
                       'Logout',
-                      style: TextStyle(color: Colors.red),
+                      style: TextStyle(color: Colors.red, fontSize: 18),
                     ),
                     onTap: () {},
                   ),

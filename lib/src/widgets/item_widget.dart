@@ -14,6 +14,7 @@ class ItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      minTileHeight: 60,
       leading: SizedBox(
         width: 40,
         height: 40,
@@ -27,7 +28,10 @@ class ItemWidget extends StatelessWidget {
       ),
       title: Row(
         children: [
-          Text(title),
+          Text(
+            title,
+            style: const TextStyle(fontSize: 18)
+          ),
           const SizedBox(width: 8),
           if (notificationCount != null) 
             Container(

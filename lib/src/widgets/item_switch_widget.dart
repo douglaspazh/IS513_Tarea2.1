@@ -14,6 +14,7 @@ class ItemSwitchWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      minTileHeight: 60,
       leading: SizedBox(
         width: 40,
         height: 40,
@@ -25,7 +26,10 @@ class ItemSwitchWidget extends StatelessWidget {
           child: Icon(icon, color: Colors.black),
         ),
       ),
-      title: Text(title),
+      title: Text(
+        title,
+        style: const TextStyle(fontSize: 18)
+      ),
       trailing: Switch(
         value: value,
         onChanged: (bool newValue) {},
